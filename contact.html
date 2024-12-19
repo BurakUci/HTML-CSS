@@ -3,22 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Doe - IT person</title>
+    <title>Songül Çoraş - IT person</title>
 </head>
 <body>
     <div class="header">
         <div class="title">
-            <h1>John Doe</h1><i><h2>Instructor</h2></i>
+            <h1>Songül Çoraş</h1><i><h2>Instructor</h2></i>
         </div>
         <div class="menu">
             <a href="index.html">HOME</a> | <a href="about.html">RESUME</a> | CONTACT
         </div>
     </div>
-    <div class="content"></div>
+    <div class="content">
+        <center><h1>CONTACT</h1></center>
+        <div class="section">
+            <div class="card">
+                <form action="saveToDataBase.aspx">
+                    <div class="form-row" id="fullName"><label for="fullName">Full Name: <input type="text" ></label>
+                    </div> 
+                    <div class="form-row" id="lastName">
+                        <label for="email">E-Mail: <input type="email"></label>
+                    </div>
+                    <div class="form-row" id="phoneNumber">
+                        <label for="phoneNumber">Phone Number: <input type="number"></label>
+                    </div>
+                    <div class="form-row" id="city">City: 
+                        <select name="city" >
+                            <option value="city1">Ankara</option>
+                            <option value="city2">İstanbul</option>
+                            <option value="city3">İzmir</option><option value="city4">Bolu</option>
+                            <option value="city5">Kars</option>
+                        </select>
+                    </div>
+                    <div class="form-row" id="message">
+                        <label for="message">Your Message: <textarea ></textarea></label>
+                    </div><br>
+                    <button type="submit">SEND</button><button type="reset">CLEAR</button>
+                </form>
+            </div>
+        </div>
+        
+    </div>
     <div class="footer">
-        <div class="phone">Call Me!</div>
-        <div class="email">Send Me Mail!</div>
-        <div class="social">İnstagram | Linkedin</div>
+        <div class="phone"><a href="tel:+905385768827">Call Me</a></div>
+        <div class="email"><a href="mailto:songul.coras@icloud.com">Send Me Mail!</a></div>
+        <div class="social"><a href="http://www.instagram.com" target="_blank" rel="noopener noreferrer">İnstagram</a> | <a href="http://Linkedin.com" target="_blank" rel="noopener noreferrer">Linkedin</a></div>
         <div class="copyright">All Right Reserved</div>
     </div>
 </body>
