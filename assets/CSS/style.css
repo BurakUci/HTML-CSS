@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(41, 202, 202);
+    font-size: 18px;
+    font-family: "Merriweather", serif ;
+    font-style: normal;
+    color: rgba(0, 2, 11, 0.874);
+}
+
+a{
+    text-decoration: none;
+}
+
+.header{
+    display: flex;/* html ögelerini sıralar */
+    justify-content: space-between;/* html ögelerini satira esit bosluklar bırakarak yayar */
+    align-items: center;
+    border: 3px solid rgb(237, 228, 228); /* header bölumune cerceve koyup rengini ve kesintisiz bir çizgi olmasını sagladık*/
+    background-color: aliceblue;/* cerceve arka planını ayarladık*/
+    border-radius: 10px;/*çerçevenin kenarlarını yumuşattık*/
+    padding: 10px 30px; /*çerçeve ve yazı arasındaki boşluklar için kullandık yani element ile iç kenarlar arasındaki uzaklıgı için . önce duşey sonra yatay*/
+    margin-bottom: 30px;/*margin çerceve ile resim arasındaki boşluk için kullanılır yani element ile dış nesneler arasındaki uzaklık için bottom dedigimiz için alt tarafı baz aldı*/
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.content .about{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    width: 60%;
+    margin: 20px;
+}
+.content.about .photo{
+    padding: 20px;
+    margin: 10px;
+
+}
+img{ 
+    width: 200px;
+    height: auto;
+    border: 3px solid rgb(247, 246, 244);
+    border-radius:50px ;
+    box-shadow: 15px 15px 15px rgb(15, 1, 1);
+    /*fotografın boyutunu ve cercevesini ayarladık */
+}
+.footer{
+    display: flex;
+    justify-content:space-around ;
+    border-top: 4px dashed rgb(236, 229, 229);
+    padding-top: 30px;
+    margin: 30px;
+    font-size: 20px;
+}
+a[href="http://www.x.com"] img {
+    width: 45px;
+    height: auto;
+  }
+  a[href="http://Linkedin.com"] img {
+    width: 40px;
+    height: auto;
+  }
+  a[href="http://www.instagram.com"] img {
+    width: 40px;
+    height: auto;
+  }
+  div.content div.about div.description {
+    font-size: 18px;
+    color: rgb(246, 245, 249);
+    margin: 90px;
+    padding: 20px;
+}
+.section{
+    width: 50%;
+    height: auto;
+}
+.section .card{
+    display: flex;
+    border: 4px solid rgb(17, 18, 18);
+    border-radius: 20px;
+    background-color: rgb(243, 246, 248);
+    padding: 20px;
+    margin: 20px;
+    justify-content: space-between;
+    box-shadow: 10px 10px 15px;
+
+}
+.section .card .left{
+    font-size: 15px;
+    flex: 3;
+}
+.section .card .right{
+    font-size: 15px;
+    flex: 3;
+}
